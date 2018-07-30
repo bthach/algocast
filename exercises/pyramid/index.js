@@ -14,6 +14,15 @@
 //       ' ### '
 //       '#####'
 
-function pyramid(n) {}
+function pyramid(n) {
+    for (i = 1; i <=n; i++) {
+        let spaces = ' '.repeat(n-i);
+        let pound = '#'.repeat(i + i - 1);
+
+        console.log(spaces + pound + spaces);
+    }
+}
+
+pyramid(2);
 
 module.exports = pyramid;
