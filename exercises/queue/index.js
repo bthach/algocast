@@ -8,17 +8,23 @@
 //     q.add(1);
 //     q.remove(); // returns 1;
 
+// [1, 2, 3, 4]
+
+// add, push.
+
+// remove, shift
+
 class Queue {
     constructor() {
         this.data = [];
     }
 
     add(num) {
-        this.data.unshift(num);
+        this.data.push(num);
     };
 
     remove() {
-        return this.data.pop();
+        return this.data.shift();
     }
 }
 
@@ -31,3 +37,17 @@ var x = q.remove();
 console.log(x);
 
 module.exports = Queue;
+
+// class Queue {
+//     constructor() {
+//         this.data = [];
+//     }
+
+//     add(num) {
+//         this.data.unshift(num);
+//     };
+
+//     remove() {
+//         return this.data.pop();
+//     }
+// }

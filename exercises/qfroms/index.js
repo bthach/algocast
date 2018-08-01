@@ -14,6 +14,38 @@
 
 const Stack = require('./stack');
 
-class Queue {}
+class Queue {
+    remove () {
+        while (stackA.peek()) {
+            stackB.push(stackA.remove())
+        }
+
+        rm = stackB.pop();
+
+        while (stackB.peek()) {
+            stackA.push(stackB(pop));
+        }
+
+        return rm;
+    }
+
+    add (item) {
+        stackA.push(item);
+    }
+
+    peek () {
+        while (stackA.peek()) {
+            stackB.push(stackA.remove())
+        }
+
+        return stackB[stackB.length-1];
+    }
+}
 
 module.exports = Queue;
+
+// stack... LIFO. 
+
+// two stacks LIFO LIFO
+
+// queue... FIFO.
